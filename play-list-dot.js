@@ -24,7 +24,6 @@ export class PlayListDot extends DDDSuper(LitElement) {
         width: 14px;
         height: 14px;
         border-radius: var(--ddd-radius-circle);
-        border: none;
         margin-right: var(--ddd-spacing-3);
         background: var(--ddd-theme-default-slateMaxLight);
         cursor: pointer;

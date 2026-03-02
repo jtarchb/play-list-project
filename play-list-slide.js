@@ -39,7 +39,7 @@ export class PlayListSlide extends DDDSuper(LitElement) {
         font-size: var(--ddd-font-size-sm);
         font-weight: var(--ddd-font-weight-bold);
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: '--ddd-ls-72-lg';
         color: var(--ddd-theme-default-beaverBlue);
         margin-bottom: var(--ddd-spacing-2);
       }
@@ -53,7 +53,7 @@ export class PlayListSlide extends DDDSuper(LitElement) {
       .rule {
         width: 90px;
         height: 4px;
-        border-radius: 99px;
+        border-radius: '--ddd-radius-rounded' ;
         background: var(--ddd-theme-default-beaverBlue);
         margin-bottom: var(--ddd-spacing-4);
       }

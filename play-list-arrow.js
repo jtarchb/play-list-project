@@ -26,8 +26,8 @@ export class PlayListArrow extends DDDSuper(LitElement) {
         background: white;
         color: var(--ddd-theme-default-beaverBlue);
         cursor: pointer;
-        font-size: 22px;
-        font-weight: bold;
+        font-size: '--ddd-font-size-3xs';
+        font-weight: '--ddd-font-weight-bold';
         display: flex;
         align-items: center;
         justify-content: center;
@@ -35,7 +35,7 @@ export class PlayListArrow extends DDDSuper(LitElement) {
 
       button:hover {
         background: var(--ddd-theme-default-beaverBlue);
-        color: white;
+        color: '--ddd-theme-default-white';
       }
     `,
   ];
