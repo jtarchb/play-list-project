@@ -67,6 +67,22 @@ export class PlayListSlide extends DDDSuper(LitElement) {
         font-family: var(--ddd-font-primary);
 
       }
+      
+      .content::-webkit-scrollbar {
+        width: 12px;
+      }
+
+
+      .content::-webkit-scrollbar-track {
+        background: var(--ddd-theme-default-slateMaxLight);
+      }
+
+
+      .content::-webkit-scrollbar-thumb {
+        background-color: var(--ddd-theme-default-limestoneGray);
+        border-radius: 20px;
+        border: 3px solid var(--ddd-theme-default-slateMaxLight);
+      }
     `,
   ];
 
