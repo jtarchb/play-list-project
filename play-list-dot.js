@@ -1,3 +1,7 @@
+/**
+ * Copyright 2026 jtarchb
+ * @license Apache-2.0
+ */
 import { LitElement, html, css } from "lit";
 import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 
@@ -20,13 +24,20 @@ export class PlayListDot extends DDDSuper(LitElement) {
   static styles = [
     super.styles,
     css`
+      :host {
+        display: inline-flex;
+      }
+
       button {
-        width: 14px;
-        height: 14px;
-        border-radius: var(--ddd-radius-circle);
-        margin-right: var(--ddd-spacing-3);
-        background: var(--ddd-theme-default-slateMaxLight);
+        width: 16px;
+        height: 16px;
+        border: none;
+        border-radius: 50%;
+        margin-right: 14px;
+        background: var(--ddd-theme-default-slateMaxLight
+);
         cursor: pointer;
+        padding: 0;
       }
 
       button.active {

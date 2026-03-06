@@ -36,6 +36,7 @@ export class PlayListSlide extends DDDSuper(LitElement) {
       }
 
       .top {
+        font-family: var(--ddd-font-primary);
         font-size: var(--ddd-font-size-sm);
         font-weight: var(--ddd-font-weight-bold);
         text-transform: uppercase;
@@ -45,6 +46,7 @@ export class PlayListSlide extends DDDSuper(LitElement) {
       }
 
       .second {
+        font-family: var(--ddd-font-primary);
         font-size: var(--ddd-font-size-4xl);
         font-weight: var(--ddd-font-weight-bold);
         margin-bottom: var(--ddd-spacing-4);
@@ -62,6 +64,8 @@ export class PlayListSlide extends DDDSuper(LitElement) {
         flex: 1;
         overflow-y: auto;
         max-width: 700px;
+        font-family: var(--ddd-font-primary);
+
       }
     `,
   ];

@@ -1,3 +1,7 @@
+/**
+ * Copyright 2026 jtarchb
+ * @license Apache-2.0
+ */
 import { LitElement, html, css } from "lit";
 import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 
@@ -16,29 +20,31 @@ export class PlayListArrow extends DDDSuper(LitElement) {
   }
 
   static styles = [
-    super.styles,
-    css`
-      button {
-        width: 44px;
-        height: 44px;
-        border-radius: var(--ddd-radius-circle);
-        border: 2px solid var(--ddd-theme-default-beaverBlue);
-        background: white;
-        color: var(--ddd-theme-default-beaverBlue);
-        cursor: pointer;
-        font-size: '--ddd-font-size-3xs';
-        font-weight: '--ddd-font-weight-bold';
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+  super.styles,
+  css`
+    :host {
+      display: inline-flex;
+    }
 
-      button:hover {
-        background: var(--ddd-theme-default-beaverBlue);
-        color: '--ddd-theme-default-white';
-      }
-    `,
-  ];
+    button {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 3px solid var(--ddd-theme-default-beaverBlue);
+      background: #f7f7f7;
+      color: var(--ddd-theme-default-beaverBlue);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 1;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  `,
+];
 
   render() {
     const label =
